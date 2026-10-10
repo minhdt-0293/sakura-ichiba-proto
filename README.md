@@ -8,7 +8,7 @@ Prototype chạy thật của hệ thống hỗ trợ nghiệp vụ chợ bán b
 
 ## URL demo
 
-`https://<điền-sau-khi-deploy>.vercel.app`
+`https://sakura-ichiba-proto.vercel.app/`
 
 ## Tài khoản demo (dành cho giảng viên)
 
