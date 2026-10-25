@@ -1,0 +1,3008 @@
+{
+ "repo": "minhdt-0293/sakura-ichiba-proto",
+ "project_title": "Product A — LAB-5 backlog (桜水産市場)",
+ "sprint_start": "2026-11-09",
+ "sprint_days": 14,
+ "sprint_count": 18,
+ "items": [
+  {
+   "key": "E01",
+   "level": "epic",
+   "parent": null,
+   "title": "[E01] Nền tảng & khung kỹ thuật",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "ARCHITECTURE §2, ADR-009, Common_Spec CS-01..14",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: ARCHITECTURE §2, ADR-009, Common_Spec CS-01..14"
+  },
+  {
+   "key": "E02",
+   "level": "epic",
+   "parent": null,
+   "title": "[E02] Xác thực & phân quyền",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "C001, AUTH-1..3, ADM-2, Role_Matrix, NFR-SEC-01/03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: C001, AUTH-1..3, ADM-2, Role_Matrix, NFR-SEC-01/03"
+  },
+  {
+   "key": "E03",
+   "level": "epic",
+   "parent": null,
+   "title": "[E03] Người tham gia & tư cách 許可 / 承認 / 登録",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "P001, P002, PTY-1..8, FIG-004, FIG-010, ADR-002",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: P001, P002, PTY-1..8, FIG-004, FIG-010, ADR-002\n\nKhông gộp 許可 và 承認 (02-08, 12-06)"
+  },
+  {
+   "key": "E04",
+   "level": "epic",
+   "parent": null,
+   "title": "[E04] Lot",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "L001..L004, LOT-1..6, FIG-011, ADR-004",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: L001..L004, LOT-1..6, FIG-011, ADR-004"
+  },
+  {
+   "key": "E05",
+   "level": "epic",
+   "parent": null,
+   "title": "[E05] Giao dịch 相対取引 / せり",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "T001..T004, TRD-1..6, FIG-012, ADR-003",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: T001..T004, TRD-1..6, FIG-012, ADR-003\n\n相対取引 là luồng chính"
+  },
+  {
+   "key": "E06",
+   "level": "epic",
+   "parent": null,
+   "title": "[E06] Giao hàng",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "D001, D002, DLV-1..3, FIG-014, FIG-029, ADR-006",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: D001, D002, DLV-1..3, FIG-014, FIG-029, ADR-006"
+  },
+  {
+   "key": "E07",
+   "level": "epic",
+   "parent": null,
+   "title": "[E07] Đối soát ngày, khóa / mở lại ngày, tranh chấp",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "S001..S004, STL-1..4, ADR-005, BR-CLOSE-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: S001..S004, STL-1..4, ADR-005, BR-CLOSE-01"
+  },
+  {
+   "key": "E08",
+   "level": "epic",
+   "parent": null,
+   "title": "[E08] Sửa giao dịch đã chốt",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "S006..S008, COR-1..5, FR-CORR-01..03, ADR-005",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: S006..S008, COR-1..5, FR-CORR-01..03, ADR-005"
+  },
+  {
+   "key": "E09",
+   "level": "epic",
+   "parent": null,
+   "title": "[E09] 完納奨励金 và version tỷ lệ (ràng buộc đặc thù Product A)",
+   "labels": [
+    "epic",
+    "constraint:完納奨励金"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "R001..R004, RUL-1..5, INC-1..2, BR-INC-01, FR-INC-01..03, GOV-RULE-01, B.5, B.6, ADR-007",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: R001..R004, RUL-1..5, INC-1..2, BR-INC-01, FR-INC-01..03, GOV-RULE-01, B.5, B.6, ADR-007\n\nTách riêng theo yêu cầu đề LAB-5; nhiều biến, nghiệm thu bằng test vector"
+  },
+  {
+   "key": "E10",
+   "level": "epic",
+   "parent": null,
+   "title": "[E10] Báo cáo & xuất dữ liệu kế toán",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "B001..B003, RPT-01..12, EXP-1/2, IF-ACC-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: B001..B003, RPT-01..12, EXP-1/2, IF-ACC-01"
+  },
+  {
+   "key": "E11",
+   "level": "epic",
+   "parent": null,
+   "title": "[E11] Thông báo & tham số vận hành (nhóm B2)",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "N001, N002, C003, NTF-1, JOB-1, BR-NOTIFY-01, ADR-007",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: N001, N002, C003, NTF-1, JOB-1, BR-NOTIFY-01, ADR-007"
+  },
+  {
+   "key": "E12",
+   "level": "epic",
+   "parent": null,
+   "title": "[E12] Vận hành khi mất mạng (2 task)",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "SYN-1, SYN-2, S005, client_ops, sync_conflicts, NFR-AVL-02, ADR-008, D16",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: SYN-1, SYN-2, S005, client_ops, sync_conflicts, NFR-AVL-02, ADR-008, D16"
+  },
+  {
+   "key": "E13",
+   "level": "epic",
+   "parent": null,
+   "title": "[E13] Quản trị, audit và dữ liệu cá nhân",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "A003..A005, AUD-1, ADM-1, 09-06",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: A003..A005, AUD-1, ADM-1, 09-06"
+  },
+  {
+   "key": "E14",
+   "level": "epic",
+   "parent": null,
+   "title": "[E14] NFR, hạ tầng & kiểm thử hệ thống",
+   "labels": [
+    "epic"
+   ],
+   "kind": "EPIC",
+   "owner": "PL",
+   "spec": "Infra Design, Data Encryption Checklist, NFR-*",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Epic** · Spec LAB-4: Infra Design, Data Encryption Checklist, NFR-*"
+  },
+  {
+   "key": "E01-01",
+   "level": "issue",
+   "parent": "E01",
+   "title": "[E01-01] Khung dự án và 3 môi trường (local / staging / production)",
+   "labels": [
+    "kind:INF"
+   ],
+   "kind": "INF",
+   "owner": "INF-1",
+   "spec": "ARCHITECTURE §2, D39, NFR-SEC-04, app_users",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01\n**Loại:** INF · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** ARCHITECTURE §2, D39, NFR-SEC-04, app_users\n\n**Tiêu chí nghiệm thu**\n- [ ] Deploy được lên staging từ CI; secret chỉ nằm ở biến môi trường Vercel; README chạy local\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-01a",
+   "level": "sub",
+   "parent": "E01-01",
+   "title": "[E01-01a] Đặc tả hàm: system_config (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "ARCHITECTURE §2, D39, NFR-SEC-04, app_users",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-01\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** ARCHITECTURE §2, D39, NFR-SEC-04, app_users\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-01b",
+   "level": "sub",
+   "parent": "E01-01",
+   "title": "[E01-01b] Repo, CI: lint, test, kiểm tra migration",
+   "labels": [
+    "kind:INF"
+   ],
+   "kind": "INF",
+   "owner": "INF-1",
+   "spec": "ARCHITECTURE §2, D39, NFR-SEC-04, app_users",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-01\n**Loại:** INF · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** ARCHITECTURE §2, D39, NFR-SEC-04, app_users\n\n**Tiêu chí nghiệm thu**\n- [ ] PR chạy CI xanh\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-01c",
+   "level": "sub",
+   "parent": "E01-01",
+   "title": "[E01-01c] Dựng staging / production, biến môi trường, `TRADE_CONFIRM_MODE` (D32)",
+   "labels": [
+    "kind:INF"
+   ],
+   "kind": "INF",
+   "owner": "INF-1",
+   "spec": "ARCHITECTURE §2, D39, NFR-SEC-04, app_users",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-01\n**Loại:** INF · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** ARCHITECTURE §2, D39, NFR-SEC-04, app_users\n\n**Tiêu chí nghiệm thu**\n- [ ] Deploy staging thành công; không có secret trong git\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-02",
+   "level": "issue",
+   "parent": "E01",
+   "title": "[E01-02] Khung hàm nghiệp vụ DB và audit chỉ thêm",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "ADR-009, D22, FR-AUDIT-01, B-23, B-24",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** ADR-009, D22, FR-AUDIT-01, B-23, B-24\n\n**Tiêu chí nghiệm thu**\n- [ ] write_audit ghi trong cùng transaction; trigger chặn UPDATE/DELETE audit_logs; API chỉ gọi rpc\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-02a",
+   "level": "sub",
+   "parent": "E01-02",
+   "title": "[E01-02a] Đặc tả hàm: write_audit (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "ADR-009, D22, FR-AUDIT-01, B-23, B-24",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-02\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** ADR-009, D22, FR-AUDIT-01, B-23, B-24\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-02b",
+   "level": "sub",
+   "parent": "E01-02",
+   "title": "[E01-02b] Bảng audit_logs mới (biz_date, party_id, trade_id) + trigger append-only",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "ADR-009, D22, FR-AUDIT-01, B-23, B-24",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** ADR-009, D22, FR-AUDIT-01, B-23, B-24\n\n**Tiêu chí nghiệm thu**\n- [ ] UPDATE/DELETE audit bị chặn kể cả service role\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-02c",
+   "level": "sub",
+   "parent": "E01-02",
+   "title": "[E01-02c] Mẫu API route: xác thực → kiểm tra role → rpc → ghi BLOCKED khi lỗi",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "ADR-009, D22, FR-AUDIT-01, B-23, B-24",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** ADR-009, D22, FR-AUDIT-01, B-23, B-24\n\n**Tiêu chí nghiệm thu**\n- [ ] 1 route mẫu có test 401/403/400\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-03",
+   "level": "issue",
+   "parent": "E01",
+   "title": "[E01-03] Dịch mã lỗi sang message JA/VI (59 message)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "Common_Message_List M_101..M_161, CS-02, CS-04",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** Common_Message_List M_101..M_161, CS-02, CS-04\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi mã lỗi hàm DB có message; mã chưa có → M_199\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-04",
+   "level": "issue",
+   "parent": "E01",
+   "title": "[E01-04] UI kit dùng chung (layout, bàn phím, tiền, che APPI)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "CS-04, CS-05, CS-08, CS-09, CS-14, NFR-USE-01, ME-1, LKP-1",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** CS-04, CS-05, CS-08, CS-09, CS-14, NFR-USE-01, ME-1, LKP-1\n\n**Tiêu chí nghiệm thu**\n- [ ] Component dùng lại được; Tab/Enter/Esc theo CS-14; che SĐT/email/địa chỉ theo role\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-05",
+   "level": "issue",
+   "parent": "E01",
+   "title": "[E01-05] Lịch chợ và 業務日 đang mở",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "market_calendar, assert_open_day, current_open_biz_date, B-25, D19, D27, 00-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** market_calendar, assert_open_day, current_open_biz_date, B-25, D19, D27, 00-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Hàm ghi chặn MARKET_CLOSED; current_open_biz_date không trả ngày cũ đang mở lại; test ngày nghỉ / ngày đã khóa\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-05a",
+   "level": "sub",
+   "parent": "E01-05",
+   "title": "[E01-05a] Đặc tả hàm: assert_open_day, current_open_biz_date, jst_today (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "market_calendar, assert_open_day, current_open_biz_date, B-25, D19, D27, 00-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-05\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** market_calendar, assert_open_day, current_open_biz_date, B-25, D19, D27, 00-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E01-05b",
+   "level": "sub",
+   "parent": "E01-05",
+   "title": "[E01-05b] Hiện thực + test",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "market_calendar, assert_open_day, current_open_biz_date, B-25, D19, D27, 00-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E01-05\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** market_calendar, assert_open_day, current_open_biz_date, B-25, D19, D27, 00-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Hàm ghi chặn MARKET_CLOSED; current_open_biz_date không trả ngày cũ đang mở lại; test ngày nghỉ / ngày đã khóa\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-01",
+   "level": "issue",
+   "parent": "E02",
+   "title": "[E02-01] Đăng nhập qua proxy và khóa tạm khi sai nhiều lần",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "C001, AUTH-1, login_attempts, D39, NFR-SEC-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** C001, AUTH-1, login_attempts, D39, NFR-SEC-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Sai 5 lần / 15 phút → khóa (M_126); không lộ email tồn tại (M_127)\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-01a",
+   "level": "sub",
+   "parent": "E02-01",
+   "title": "[E02-01a] Đặc tả hàm: check_login_lock, record_login_attempt (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "C001, AUTH-1, login_attempts, D39, NFR-SEC-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-01\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** C001, AUTH-1, login_attempts, D39, NFR-SEC-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-01b",
+   "level": "sub",
+   "parent": "E02-01",
+   "title": "[E02-01b] API AUTH-1 + login_attempts + locked_until",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "C001, AUTH-1, login_attempts, D39, NFR-SEC-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-01\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** C001, AUTH-1, login_attempts, D39, NFR-SEC-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Test khóa / mở khóa theo thời gian\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-01c",
+   "level": "sub",
+   "parent": "E02-01",
+   "title": "[E02-01c] Màn hình C001 vùng A",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "C001, AUTH-1, login_attempts, D39, NFR-SEC-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-01\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** C001, AUTH-1, login_attempts, D39, NFR-SEC-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Event C001 A-4 đúng spec\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-02",
+   "level": "issue",
+   "parent": "E02",
+   "title": "[E02-02] MFA (TOTP) cho role quản trị và phê duyệt",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "C001-2, AUTH-2, AUTH-3, NFR-SEC-01, Q-13",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** C001-2, AUTH-2, AUTH-3, NFR-SEC-01, Q-13\n\n**Tiêu chí nghiệm thu**\n- [ ] SYS_ADMIN / SETTLEMENT / RULE_ADMIN không vào được khi chưa AAL2\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-02a",
+   "level": "sub",
+   "parent": "E02-02",
+   "title": "[E02-02a] Đăng ký / xác thực TOTP (C001 vùng B)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "C001-2, AUTH-2, AUTH-3, NFR-SEC-01, Q-13",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-02\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** C001-2, AUTH-2, AUTH-3, NFR-SEC-01, Q-13\n\n**Tiêu chí nghiệm thu**\n- [ ] QR, nhập 6 số, M_128\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-02b",
+   "level": "sub",
+   "parent": "E02-02",
+   "title": "[E02-02b] Middleware chặn API khi chưa AAL2 (CS-03)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "C001-2, AUTH-2, AUTH-3, NFR-SEC-01, Q-13",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** C001-2, AUTH-2, AUTH-3, NFR-SEC-01, Q-13\n\n**Tiêu chí nghiệm thu**\n- [ ] 401 MFA_REQUIRED\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-03",
+   "level": "issue",
+   "parent": "E02",
+   "title": "[E02-03] Step-up MFA khi TRADE / DELIVERY xác nhận",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "D50, TRD-6, DLV-3",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** D50, TRD-6, DLV-3\n\n**Tiêu chí nghiệm thu**\n- [ ] Xác nhận DUAL và xác nhận ngoại lệ đòi AAL2; thao tác thường không đòi\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-04",
+   "level": "issue",
+   "parent": "E02",
+   "title": "[E02-04] Vai trò người dùng và quản lý tài khoản",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "user_roles, A001, A002, ADM-2, B-26, FR-IAM-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** user_roles, A001, A002, ADM-2, B-26, FR-IAM-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Cấp / thu role có granted_by, audit trước/sau\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-04a",
+   "level": "sub",
+   "parent": "E02-04",
+   "title": "[E02-04a] Đặc tả hàm: grant_role, revoke_role (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "user_roles, A001, A002, ADM-2, B-26, FR-IAM-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-04\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** user_roles, A001, A002, ADM-2, B-26, FR-IAM-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-04b",
+   "level": "sub",
+   "parent": "E02-04",
+   "title": "[E02-04b] Migration roles text[] → user_roles + API ADM-2",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "user_roles, A001, A002, ADM-2, B-26, FR-IAM-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-04\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** user_roles, A001, A002, ADM-2, B-26, FR-IAM-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Dữ liệu prototype chuyển đủ\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-04c",
+   "level": "sub",
+   "parent": "E02-04",
+   "title": "[E02-04c] Màn hình A001 / A002 (reset MFA)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "user_roles, A001, A002, ADM-2, B-26, FR-IAM-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02-04\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** user_roles, A001, A002, ADM-2, B-26, FR-IAM-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ SYS_ADMIN thấy\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-05",
+   "level": "issue",
+   "parent": "E02",
+   "title": "[E02-05] Áp Role_Matrix ở API và giao diện",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "Role_Matrix, CS-01, CS-05",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** Role_Matrix, CS-01, CS-05\n\n**Tiêu chí nghiệm thu**\n- [ ] Mỗi dòng Role_Matrix có test quyền; nút ẩn với role không có quyền\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E02-06",
+   "level": "issue",
+   "parent": "E02",
+   "title": "[E02-06] Hết phiên 30 phút, tablet tự đăng xuất 10:30",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "CS-11, D39",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E02\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** CS-11, D39\n\n**Tiêu chí nghiệm thu**\n- [ ] Test hết phiên trên tablet dùng chung\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-01",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-01] Migration DB tư cách: trạng thái mới, events, requests",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "qualifications, qualification_events, qualification_requests, parties, B-01, B-03, D3, D6, D20",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** qualifications, qualification_events, qualification_requests, parties, B-01, B-03, D3, D6, D20\n\n**Tiêu chí nghiệm thu**\n- [ ] Có REREVIEW / EXPIRED / REVOKED; parties.status chỉ ACTIVE / INACTIVE; dữ liệu SUSPENDED cũ chuyển sang qualifications\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-02",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-02] Kiểm tra tư cách lúc chốt (party_block_reason)",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "party_block_reason, party_valid_qualification, required_qual_type, BR-PERM-01, D5, D6",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** party_block_reason, party_valid_qualification, required_qual_type, BR-PERM-01, D5, D6\n\n**Tiêu chí nghiệm thu**\n- [ ] Test 4 loại người tham gia × 5 trạng thái × ngày trong / ngoài hiệu lực\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-02a",
+   "level": "sub",
+   "parent": "E03-02",
+   "title": "[E03-02a] Đặc tả hàm: party_valid_qualification, required_qual_type, trg_qual_type_check (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "party_block_reason, party_valid_qualification, required_qual_type, BR-PERM-01, D5, D6",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-02\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** party_block_reason, party_valid_qualification, required_qual_type, BR-PERM-01, D5, D6\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-02b",
+   "level": "sub",
+   "parent": "E03-02",
+   "title": "[E03-02b] Hiện thực + test",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "party_block_reason, party_valid_qualification, required_qual_type, BR-PERM-01, D5, D6",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** party_block_reason, party_valid_qualification, required_qual_type, BR-PERM-01, D5, D6\n\n**Tiêu chí nghiệm thu**\n- [ ] Test 4 loại người tham gia × 5 trạng thái × ngày trong / ngoài hiệu lực\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-03",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-03] Tạm ngừng tư cách (1 người)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-6, change_qualification_status, D28",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-6, change_qualification_status, D28\n\n**Tiêu chí nghiệm thu**\n- [ ] Tạm ngừng có lý do, hiệu lực ngay; mọi đường về VALID trả REQUEST_REQUIRED\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-04",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-04] Gỡ tạm ngừng theo 3 nhánh và thu hồi",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37\n\n**Tiêu chí nghiệm thu**\n- [ ] Nhánh xác định theo loại tư cách, người dùng không chọn; người duyệt ≠ người lập\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-04a",
+   "level": "sub",
+   "parent": "E03-04",
+   "title": "[E03-04a] Nhánh 登録 (卸売業者, 買出人): RELEASE → duyệt",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37\n\n**Tiêu chí nghiệm thu**\n- [ ] Test duyệt / bác / SAME_PERSON\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-04b",
+   "level": "sub",
+   "parent": "E03-04",
+   "title": "[E03-04b] Nhánh 許可 (仲卸): RELEASE + điều kiện + bằng chứng",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37\n\n**Tiêu chí nghiệm thu**\n- [ ] Thiếu điều kiện / bằng chứng → M_122\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-04c",
+   "level": "sub",
+   "parent": "E03-04",
+   "title": "[E03-04c] Nhánh 承認 (売買参加者): RELEASE → REREVIEW",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37\n\n**Tiêu chí nghiệm thu**\n- [ ] Bác → về SUSPENDED\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-04d",
+   "level": "sub",
+   "parent": "E03-04",
+   "title": "[E03-04d] Thu hồi REVOKE qua duyệt (D37)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37\n\n**Tiêu chí nghiệm thu**\n- [ ] REVOKED là trạng thái cuối\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-04e",
+   "level": "sub",
+   "parent": "E03-04",
+   "title": "[E03-04e] Test ma trận loại × trạng thái × loại yêu cầu (kiểm tra lại lúc duyệt)",
+   "labels": [
+    "kind:QA"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-04\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** PTY-7, PTY-8, create_qualification_request, review_qualification_request, FIG-004, D4, D20, D37\n\n**Tiêu chí nghiệm thu**\n- [ ] Tổ hợp sai → M_137; RELEASE quá hạn → M_153\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-05",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-05] Thẩm tra lại khi hết hạn (kỳ hiệu lực mới)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "REREVIEW, PTY-8, D3",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** REREVIEW, PTY-8, D3\n\n**Tiêu chí nghiệm thu**\n- [ ] Duyệt: kỳ cũ → EXPIRED, kỳ mới VALID (valid_from = ngày duyệt, giả định); thiếu kết quả thẩm tra → M_123\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-06",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-06] Cấp tư cách lần đầu có duyệt",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-5, create_first_qualification, D40",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-5, create_first_qualification, D40\n\n**Tiêu chí nghiệm thu**\n- [ ] Đã có kỳ → M_154; cấp lần đầu cần người duyệt khác người lập\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-06a",
+   "level": "sub",
+   "parent": "E03-06",
+   "title": "[E03-06a] Đặc tả hàm: create_first_qualification (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "PTY-5, create_first_qualification, D40",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-06\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** PTY-5, create_first_qualification, D40\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-06b",
+   "level": "sub",
+   "parent": "E03-06",
+   "title": "[E03-06b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "PTY-5, create_first_qualification, D40",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-06\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** PTY-5, create_first_qualification, D40\n\n**Tiêu chí nghiệm thu**\n- [ ] Test duyệt / bác\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-07",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-07] Job đổi tư cách quá hạn sang EXPIRED",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "expire_qualifications, D41, FIG-010",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** expire_qualifications, D41, FIG-010\n\n**Tiêu chí nghiệm thu**\n- [ ] VALID / SUSPENDED quá hạn → EXPIRED; RELEASE đang chờ bị bác tự động; ghi job_runs\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-08",
+   "level": "issue",
+   "parent": "E03",
+   "title": "[E03-08] Màn hình người tham gia P001 / P002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4\n\n**Tiêu chí nghiệm thu**\n- [ ] Nút ở B-5 đúng bảng ①; APPI che theo role\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-08a",
+   "level": "sub",
+   "parent": "E03-08",
+   "title": "[E03-08a] P001 danh sách + cột giao dịch được hôm nay",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-08\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4\n\n**Tiêu chí nghiệm thu**\n- [ ] Lọc theo loại / trạng thái\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-08b",
+   "level": "sub",
+   "parent": "E03-08",
+   "title": "[E03-08b] P002 vùng A thông tin + hạn mức (chỉ hiển thị, D17)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-08\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4\n\n**Tiêu chí nghiệm thu**\n- [ ] Event A-11\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E03-08c",
+   "level": "sub",
+   "parent": "E03-08",
+   "title": "[E03-08c] P002 vùng B / C / D: tư cách, lịch sử, dialog yêu cầu",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E03-08\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** P001, P002 (bảng ①; P003 gộp vào P002), PTY-1, PTY-2, PTY-3, PTY-4\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi event P002 trong Screen Spec\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-01",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-01] Migration DB lot: 6 trạng thái + lịch sử trạng thái",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "lots, lot_status_events, B-05, D8",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** lots, lot_status_events, B-05, D8\n\n**Tiêu chí nghiệm thu**\n- [ ] Dữ liệu SOLD_OUT cũ chuyển đúng; RPT-02 đọc được log\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-02",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-02] Hàm tính lại trạng thái lot",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "recalc_lot_status, D8, D23, D24, D30, D42, D52",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** recalc_lot_status, D8, D23, D24, D30, D42, D52\n\n**Tiêu chí nghiệm thu**\n- [ ] Test đủ đường tiến / lùi; không SOLD khi còn PENDING_CONFIRM; luôn ghi SOLD trước DELIVERING\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-03",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-03] Tiếp nhận lot (L002)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "L002, LOT-2, create_lot, FR-LOT-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** L002, LOT-2, create_lot, FR-LOT-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Mã lot do hệ thống cấp; mã tạm lưu kèm; 卸売業者 không có 登録 → M_106 (giả định)\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-03a",
+   "level": "sub",
+   "parent": "E04-03",
+   "title": "[E04-03a] Đặc tả hàm: create_lot (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "L002, LOT-2, create_lot, FR-LOT-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-03\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** L002, LOT-2, create_lot, FR-LOT-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-03b",
+   "level": "sub",
+   "parent": "E04-03",
+   "title": "[E04-03b] API LOT-2 + create_lot",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "L002, LOT-2, create_lot, FR-LOT-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** L002, LOT-2, create_lot, FR-LOT-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Idempotent theo client_op_id\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-03c",
+   "level": "sub",
+   "parent": "E04-03",
+   "title": "[E04-03c] Màn hình L002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "L002, LOT-2, create_lot, FR-LOT-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-03\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** L002, LOT-2, create_lot, FR-LOT-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Event L002 online\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-04",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-04] Ghi đánh giá và mở bán (L003 / L004)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Không có gợi ý tự động; đánh giá lại có audit\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-04a",
+   "level": "sub",
+   "parent": "E04-04",
+   "title": "[E04-04a] Đặc tả hàm: record_evaluation, publish_lot (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-04\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-04b",
+   "level": "sub",
+   "parent": "E04-04",
+   "title": "[E04-04b] API LOT-4 / LOT-5",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Test RECEIVED → INSPECTED → ON_SALE\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-04c",
+   "level": "sub",
+   "parent": "E04-04",
+   "title": "[E04-04c] Màn hình L003 (vùng A–E, stepper 6 trạng thái, số chờ xác nhận)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-04\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** L003, LOT-3, LOT-4, LOT-5, lot_evaluations, record_evaluation, publish_lot, FR-LOT-02, CAP-HUMAN-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi event L003\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-05",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-05] Sửa thuộc tính lot có kiểm soát",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "LOT-6, correct_lot_attributes, FR-LOT-04, D51",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** LOT-6, correct_lot_attributes, FR-LOT-04, D51\n\n**Tiêu chí nghiệm thu**\n- [ ] Ngày đã khóa → M_101; audit trước/sau\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-05a",
+   "level": "sub",
+   "parent": "E04-05",
+   "title": "[E04-05a] Đặc tả hàm: correct_lot_attributes (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "LOT-6, correct_lot_attributes, FR-LOT-04, D51",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-05\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** LOT-6, correct_lot_attributes, FR-LOT-04, D51\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-05b",
+   "level": "sub",
+   "parent": "E04-05",
+   "title": "[E04-05b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "LOT-6, correct_lot_attributes, FR-LOT-04, D51",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04-05\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** LOT-6, correct_lot_attributes, FR-LOT-04, D51\n\n**Tiêu chí nghiệm thu**\n- [ ] Ngày đã khóa → M_101; audit trước/sau\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-06",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-06] Đính kèm chứng từ (Storage)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "ATT-1, ATT-2, attachments, DR-IMAGE-01, TBL-ATTACH-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** ATT-1, ATT-2, attachments, DR-IMAGE-01, TBL-ATTACH-01\n\n**Tiêu chí nghiệm thu**\n- [ ] JPEG/PNG/PDF ≤ 10 MB (giả định); signed URL 5 phút\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E04-07",
+   "level": "issue",
+   "parent": "E04",
+   "title": "[E04-07] Danh sách lot L001",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "L001, LOT-1",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E04\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** L001, LOT-1\n\n**Tiêu chí nghiệm thu**\n- [ ] Lọc 業務日 / trạng thái; p95 ≤ 2s\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-01",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-01] Migration DB giao dịch",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "trades, B-07, B-08, D7",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** trades, B-07, B-08, D7\n\n**Tiêu chí nghiệm thu**\n- [ ] Thêm PENDING_CONFIRM / REJECTED, submitted_*, rejected_*, buyer_qualification_id; confirmed_at cho phép NULL\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-02",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-02] Chốt giao dịch chế độ SINGLE",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "confirm_trade, TRD-2, BR-PERM-01, BR-LOT-02, FR-AITAI-01/02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** confirm_trade, TRD-2, BR-PERM-01, BR-LOT-02, FR-AITAI-01/02\n\n**Tiêu chí nghiệm thu**\n- [ ] Kiểm tra theo ARCHITECTURE §4.1; 2 người chốt cùng lot không bán vượt\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-02a",
+   "level": "sub",
+   "parent": "E05-02",
+   "title": "[E05-02a] Hàm confirm_trade (SINGLE)",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "confirm_trade, TRD-2, BR-PERM-01, BR-LOT-02, FR-AITAI-01/02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** confirm_trade, TRD-2, BR-PERM-01, BR-LOT-02, FR-AITAI-01/02\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi mã lỗi của Function spec\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-02b",
+   "level": "sub",
+   "parent": "E05-02",
+   "title": "[E05-02b] Test đồng thời chống bán vượt",
+   "labels": [
+    "kind:QA"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "confirm_trade, TRD-2, BR-PERM-01, BR-LOT-02, FR-AITAI-01/02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-02\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** confirm_trade, TRD-2, BR-PERM-01, BR-LOT-02, FR-AITAI-01/02\n\n**Tiêu chí nghiệm thu**\n- [ ] Test 2 phiên chốt cùng lúc\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-03",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-03] Chế độ DUAL: giữ chỗ và người thứ hai xác nhận",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "review_trade, TRD-6, D7, D29, D49, D52",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** review_trade, TRD-6, D7, D29, D49, D52\n\n**Tiêu chí nghiệm thu**\n- [ ] Xác nhận bởi TRADE ≠ người nhập; kiểm tra tư cách lại; bác trả số lượng; せり luôn SINGLE\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-03a",
+   "level": "sub",
+   "parent": "E05-03",
+   "title": "[E05-03a] Hàm review_trade + giữ chỗ",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "review_trade, TRD-6, D7, D29, D49, D52",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-03\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** review_trade, TRD-6, D7, D29, D49, D52\n\n**Tiêu chí nghiệm thu**\n- [ ] Test xác nhận / bác / SAME_PERSON\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-03b",
+   "level": "sub",
+   "parent": "E05-03",
+   "title": "[E05-03b] T001 lọc 確認待ち + nút xác nhận; số chờ ở T002 / L003",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "review_trade, TRD-6, D7, D29, D49, D52",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-03\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** review_trade, TRD-6, D7, D29, D49, D52\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ hiện khi mode DUAL\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-04",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-04] Màn hình 相対取引 T002 và kiểm tra trước tư cách",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "T002, TRD-5, participation_usage, D17",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** T002, TRD-5, participation_usage, D17\n\n**Tiêu chí nghiệm thu**\n- [ ] Hạn mức chỉ hiển thị; mọi event T002\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-04a",
+   "level": "sub",
+   "parent": "E05-04",
+   "title": "[E05-04a] Đặc tả hàm: participation_usage (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "T002, TRD-5, participation_usage, D17",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-04\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** T002, TRD-5, participation_usage, D17\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-04b",
+   "level": "sub",
+   "parent": "E05-04",
+   "title": "[E05-04b] API TRD-5 + participation_usage (chưa đặc tả)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "T002, TRD-5, participation_usage, D17",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** T002, TRD-5, participation_usage, D17\n\n**Tiêu chí nghiệm thu**\n- [ ] Trả tư cách + hạn mức / đã dùng\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-04c",
+   "level": "sub",
+   "parent": "E05-04",
+   "title": "[E05-04c] Màn hình T002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "T002, TRD-5, participation_usage, D17",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-04\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** T002, TRD-5, participation_usage, D17\n\n**Tiêu chí nghiệm thu**\n- [ ] Enter = chốt; M_103/M_104/M_105/M_108\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-05",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-05] Màn hình せり T004",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "T004, TRD-2, FR-SERI-01/02, D49",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** T004, TRD-2, FR-SERI-01/02, D49\n\n**Tiêu chí nghiệm thu**\n- [ ] Bắt buộc người xác nhận và giờ kết quả; nháp lưu trên máy; không OCR\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-06",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-06] Hủy giao dịch",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "TRD-4, cancel_trade, FR-AITAI-03, D53",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** TRD-4, cancel_trade, FR-AITAI-03, D53\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ khi chưa khóa ngày, chưa giao; ngày mở lại + kỳ thưởng FINAL → chặn\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-06a",
+   "level": "sub",
+   "parent": "E05-06",
+   "title": "[E05-06a] Đặc tả hàm: cancel_trade (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "TRD-4, cancel_trade, FR-AITAI-03, D53",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-06\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** TRD-4, cancel_trade, FR-AITAI-03, D53\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-06b",
+   "level": "sub",
+   "parent": "E05-06",
+   "title": "[E05-06b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "TRD-4, cancel_trade, FR-AITAI-03, D53",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05-06\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** TRD-4, cancel_trade, FR-AITAI-03, D53\n\n**Tiêu chí nghiệm thu**\n- [ ] Trả số lượng, recalc_lot_status\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E05-07",
+   "level": "issue",
+   "parent": "E05",
+   "title": "[E05-07] Danh sách / chi tiết giao dịch T001 / T003",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "T001, T003, TRD-1, TRD-3",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E05\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** T001, T003, TRD-1, TRD-3\n\n**Tiêu chí nghiệm thu**\n- [ ] Giá trị hiệu lực, delta, giao hàng, audit\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-01",
+   "level": "issue",
+   "parent": "E06",
+   "title": "[E06-01] Migration DB giao hàng",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "deliveries, trades.delivery_status, B-13..B-16",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** deliveries, trades.delivery_status, B-13..B-16\n\n**Tiêu chí nghiệm thu**\n- [ ] Thêm EXCEPTION_CONFIRMED, NOT_APPLICABLE, exception_confirmed_*, deliveries.biz_date = ngày mở\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-02",
+   "level": "issue",
+   "parent": "E06",
+   "title": "[E06-02] Ghi giao hàng nhiều lần",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48\n\n**Tiêu chí nghiệm thu**\n- [ ] COMPLETED chỉ khi Σ giao = số lượng hiệu lực (BR-DEL-03)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-02a",
+   "level": "sub",
+   "parent": "E06-02",
+   "title": "[E06-02a] Luồng chính: nhiều lần, ngoại lệ, kiểm tra tư cách bên mua",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48\n\n**Tiêu chí nghiệm thu**\n- [ ] Bên mua mất hiệu lực → BLOCKED\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-02b",
+   "level": "sub",
+   "parent": "E06-02",
+   "title": "[E06-02b] Trả hàng RETURN trừ số đã giao (D44)",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48\n\n**Tiêu chí nghiệm thu**\n- [ ] Test với D33\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-02c",
+   "level": "sub",
+   "parent": "E06-02",
+   "title": "[E06-02c] Đóng phần còn lại khi bên mua bị chặn: PARTIAL_CANCEL số lượng 0 (D48)",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-3",
+   "spec": "record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** record_delivery, DLV-2, FR-DEL-01..05, D11, D13, D19, D44, D48\n\n**Tiêu chí nghiệm thu**\n- [ ] Test giao dịch kẹt\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-03",
+   "level": "issue",
+   "parent": "E06",
+   "title": "[E06-03] Xác nhận ngoại lệ giao hàng",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-3",
+   "spec": "DLV-3, confirm_delivery_exception, D11, D12, D21, D50",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06\n**Loại:** BE · **Người phụ trách (giả định):** BE-3\n**Spec LAB-4:** DLV-3, confirm_delivery_exception, D11, D12, D21, D50\n\n**Tiêu chí nghiệm thu**\n- [ ] Người xác nhận ≠ người ghi; không đổi tiền; không tự COMPLETED\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E06-04",
+   "level": "issue",
+   "parent": "E06",
+   "title": "[E06-04] Màn hình D001 / D002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "D001, D002 (D003 gộp vào D002)",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E06\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** D001, D002 (D003 gộp vào D002)\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi event D002 online; badge 6 trạng thái\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-01",
+   "level": "issue",
+   "parent": "E07",
+   "title": "[E07-01] Số liệu ngày theo giá trị gốc + delta ghi nhận",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "settlement_summary, STL-1, ARCHITECTURE §4.7, B.4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** settlement_summary, STL-1, ARCHITECTURE §4.7, B.4\n\n**Tiêu chí nghiệm thu**\n- [ ] Số của ngày đã khóa không đổi khi có sửa sau; trùng với lock_snapshot\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-01a",
+   "level": "sub",
+   "parent": "E07-01",
+   "title": "[E07-01a] Đặc tả hàm: settlement_summary (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "settlement_summary, STL-1, ARCHITECTURE §4.7, B.4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07-01\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** settlement_summary, STL-1, ARCHITECTURE §4.7, B.4\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-01b",
+   "level": "sub",
+   "parent": "E07-01",
+   "title": "[E07-01b] Hiện thực + test số liệu trước / sau sửa",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "settlement_summary, STL-1, ARCHITECTURE §4.7, B.4",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07-01\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** settlement_summary, STL-1, ARCHITECTURE §4.7, B.4\n\n**Tiêu chí nghiệm thu**\n- [ ] Test không cộng delta 2 lần\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-02",
+   "level": "issue",
+   "parent": "E07",
+   "title": "[E07-02] Khóa 業務日",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "lock_business_day, STL-2, business_days, D26, D34",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** lock_business_day, STL-2, business_days, D26, D34\n\n**Tiêu chí nghiệm thu**\n- [ ] Chặn khi còn PENDING_CONFIRM; cảnh báo giao hàng tồn / tranh chấp / xung đột đồng bộ\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-03",
+   "level": "issue",
+   "parent": "E07",
+   "title": "[E07-03] Mở lại ngày đã khóa (2 người)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "STL-3, STL-4, request_reopen, review_reopen, reopen_requests, D10, D18",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** STL-3, STL-4, request_reopen, review_reopen, reopen_requests, D10, D18\n\n**Tiêu chí nghiệm thu**\n- [ ] Ngày đã xuất kế toán → M_150; người duyệt ≠ người lập\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-03a",
+   "level": "sub",
+   "parent": "E07-03",
+   "title": "[E07-03a] Đặc tả hàm: request_reopen (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "STL-3, STL-4, request_reopen, review_reopen, reopen_requests, D10, D18",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07-03\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** STL-3, STL-4, request_reopen, review_reopen, reopen_requests, D10, D18\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-03b",
+   "level": "sub",
+   "parent": "E07-03",
+   "title": "[E07-03b] Hiện thực request_reopen / review_reopen + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "STL-3, STL-4, request_reopen, review_reopen, reopen_requests, D10, D18",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** STL-3, STL-4, request_reopen, review_reopen, reopen_requests, D10, D18\n\n**Tiêu chí nghiệm thu**\n- [ ] Test 2 người, đã xuất\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-04",
+   "level": "issue",
+   "parent": "E07",
+   "title": "[E07-04] Màn hình đối soát S001 / S002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "S001",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** S001\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi event S001\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-05",
+   "level": "issue",
+   "parent": "E07",
+   "title": "[E07-05] Tranh chấp S003 / S004",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "S003, S004, disputes, dispute_updates, FR-SETTLE-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** S003, S004, disputes, dispute_updates, FR-SETTLE-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Lưu lịch sử mỗi lần cập nhật; RPT-09 đọc được\n\n**Phát sinh từ chỗ hở:** G-01 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-05a",
+   "level": "sub",
+   "parent": "E07-05",
+   "title": "[E07-05a] Đặc tả API tranh chấp (API List LAB-4 chưa có)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "S003, S004, disputes, dispute_updates, FR-SETTLE-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07-05\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** S003, S004, disputes, dispute_updates, FR-SETTLE-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Thêm API vào API Design\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E07-05b",
+   "level": "sub",
+   "parent": "E07-05",
+   "title": "[E07-05b] API + màn hình S003 / S004",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "S003, S004, disputes, dispute_updates, FR-SETTLE-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E07-05\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** S003, S004, disputes, dispute_updates, FR-SETTLE-03\n\n**Tiêu chí nghiệm thu**\n- [ ] CRUD có audit\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-01",
+   "level": "issue",
+   "parent": "E08",
+   "title": "[E08-01] Lập yêu cầu sửa",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "COR-2, request_correction, FORM-CORR-01, D9",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** COR-2, request_correction, FORM-CORR-01, D9\n\n**Tiêu chí nghiệm thu**\n- [ ] Bằng chứng bắt buộc; 1 yêu cầu đang mở / giao dịch (cr_open_uq)\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-01a",
+   "level": "sub",
+   "parent": "E08-01",
+   "title": "[E08-01a] Đặc tả hàm: request_correction (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "COR-2, request_correction, FORM-CORR-01, D9",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08-01\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** COR-2, request_correction, FORM-CORR-01, D9\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-01b",
+   "level": "sub",
+   "parent": "E08-01",
+   "title": "[E08-01b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "COR-2, request_correction, FORM-CORR-01, D9",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08-01\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** COR-2, request_correction, FORM-CORR-01, D9\n\n**Tiêu chí nghiệm thu**\n- [ ] M_117, M_118, M_146\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-02",
+   "level": "issue",
+   "parent": "E08",
+   "title": "[E08-02] Duyệt yêu cầu sửa và sinh delta",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54\n\n**Tiêu chí nghiệm thu**\n- [ ] Giá trị gốc giữ nguyên; delta vào ngày đúng D27\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-02a",
+   "level": "sub",
+   "parent": "E08-02",
+   "title": "[E08-02a] Delta, ngày ghi nhận, cập nhật lot / giao hàng",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54\n\n**Tiêu chí nghiệm thu**\n- [ ] Test ngày gốc mở / khóa / hôm nay khóa\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-02b",
+   "level": "sub",
+   "parent": "E08-02",
+   "title": "[E08-02b] NEEDS_INFO và gửi lại (COR-5)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08-02\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ người lập gửi lại\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-02c",
+   "level": "sub",
+   "parent": "E08-02",
+   "title": "[E08-02c] Giao thiếu không hoàn lot (D43); sửa về 0 → NOT_APPLICABLE (D54)",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** COR-4, COR-5, review_correction, resubmit_correction, trade_adjustments, D9, D27, D33, D43, D54\n\n**Tiêu chí nghiệm thu**\n- [ ] Test lot không có hàng ảo\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E08-03",
+   "level": "issue",
+   "parent": "E08",
+   "title": "[E08-03] Màn hình S006 / S007 / S008",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "S006, S007, S008, COR-1, COR-3, correction_requests",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E08\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** S006, S007, S008, COR-1, COR-3, correction_requests\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi event S008\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-01",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-01] Làm rõ công thức thưởng và lấy test vector",
+   "labels": [
+    "kind:SPEC",
+    "constraint:完納奨励金"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "Q-01, Q-05, Q-06, C.3 INC-EDGE-01..03",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** Q-01, Q-05, Q-06, C.3 INC-EDGE-01..03\n\n**Tiêu chí nghiệm thu**\n- [ ] Có câu trả lời của khách hoặc giả định được PL ký; có bộ test vector\n\n**Phát sinh từ chỗ hở:** G-05 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-02",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-02] Version tỷ lệ: DB và quota 4 lần / năm",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "rate_versions, rate_tiers, B-18, D14a, D14b",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** rate_versions, rate_tiers, B-18, D14a, D14b\n\n**Tiêu chí nghiệm thu**\n- [ ] Quota đếm version đã duyệt, không đếm rollback\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-03",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-03] Soạn version và rollback khóa nội dung",
+   "labels": [
+    "kind:BE",
+    "constraint:完納奨励金"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RUL-2, RUL-5, save_rate_version, D14b, Q-20",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RUL-2, RUL-5, save_rate_version, D14b, Q-20\n\n**Tiêu chí nghiệm thu**\n- [ ] Bản rollback không sửa được tiers (M_155)\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-03a",
+   "level": "sub",
+   "parent": "E09-03",
+   "title": "[E09-03a] Đặc tả hàm: save_rate_version (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC",
+    "constraint:完納奨励金"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "RUL-2, RUL-5, save_rate_version, D14b, Q-20",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09-03\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** RUL-2, RUL-5, save_rate_version, D14b, Q-20\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-03b",
+   "level": "sub",
+   "parent": "E09-03",
+   "title": "[E09-03b] Hiện thực + test",
+   "labels": [
+    "kind:BE",
+    "constraint:完納奨励金"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RUL-2, RUL-5, save_rate_version, D14b, Q-20",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RUL-2, RUL-5, save_rate_version, D14b, Q-20\n\n**Tiêu chí nghiệm thu**\n- [ ] Test rollback\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-04",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-04] Duyệt version tỷ lệ",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "RUL-4, review_rate_version, D14c, D14d, D45",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RUL-4, review_rate_version, D14c, D14d, D45\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ SETTLEMENT ≠ người lập; hiệu lực ≥ ngày mai và là ngày 1 của tháng; quá quota → M_120\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-05",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-05] Màn hình R001 / R002",
+   "labels": [
+    "kind:FE",
+    "constraint:完納奨励金"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "R001, R002, RUL-1, RUL-3",
+   "constraint": "完納奨励金",
+   "status": "Todo",
+   "body": "**Thuộc:** E09\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** R001, R002, RUL-1, RUL-3\n\n**Tiêu chí nghiệm thu**\n- [ ] Mọi event R002; nhóm A chỉ xem\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-06",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-06] Nguồn dữ liệu thanh toán (payments)",
+   "labels": [
+    "kind:BE",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "payments, Q-05",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** payments, Q-05\n\n**Tiêu chí nghiệm thu**\n- [ ] Có cách đưa dữ liệu thanh toán vào hệ thống, có audit\n\n**Phát sinh từ chỗ hở:** G-01 (task-breakdown.md §4)\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-06a",
+   "level": "sub",
+   "parent": "E09-06",
+   "title": "[E09-06a] Làm rõ nguồn và định dạng dữ liệu thanh toán",
+   "labels": [
+    "kind:SPEC",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "payments, Q-05",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-06\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** payments, Q-05\n\n**Tiêu chí nghiệm thu**\n- [ ] Câu hỏi gửi khách / giả định\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-06b",
+   "level": "sub",
+   "parent": "E09-06",
+   "title": "[E09-06b] API nhập CSV thanh toán (LAB-4 chưa có)",
+   "labels": [
+    "kind:BE",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "payments, Q-05",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-06\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** payments, Q-05\n\n**Tiêu chí nghiệm thu**\n- [ ] Kiểm tra trùng kỳ / người tham gia\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-07",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-07] Tính 完納奨励金 theo kỳ",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03\n\n**Tiêu chí nghiệm thu**\n- [ ] floor(eligible × rate × 110/100); quá hạn = 0; không ân hạn; lưu version tỷ lệ\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05, Q-06 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-07a",
+   "level": "sub",
+   "parent": "E09-07",
+   "title": "[E09-07a] Đặc tả hàm: effective_rate_version (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-07\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05, Q-06 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-07b",
+   "level": "sub",
+   "parent": "E09-07",
+   "title": "[E09-07b] Xác định đúng hạn và số tiền đủ điều kiện",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-07\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Theo giả định Q-05\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05, Q-06 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-07c",
+   "level": "sub",
+   "parent": "E09-07",
+   "title": "[E09-07c] Chọn bậc tỷ lệ theo version của ngày đầu kỳ (D45)",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-07\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Test biên min_amount\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05, Q-06 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-07d",
+   "level": "sub",
+   "parent": "E09-07",
+   "title": "[E09-07d] Tính thưởng, làm tròn xuống, cộng carryover",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-07\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** INC-1, run_incentive, incentive_runs, incentive_results, BR-INC-01, FIG-013, FR-INC-01, FR-AUDIT-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Test INC-EDGE-03\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05, Q-06 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-08",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-08] Chốt kỳ thưởng",
+   "labels": [
+    "kind:BE",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "INC-2, finalize_incentive, D31",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** INC-2, finalize_incentive, D31\n\n**Tiêu chí nghiệm thu**\n- [ ] Chặn khi còn carryover chưa cộng (M_157); FINAL bất biến\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-09",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-09] Chênh lệch thưởng sang kỳ sau khi sửa giao dịch",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "incentive_carryovers, review_correction bước 5, FR-INC-03, D46, D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** incentive_carryovers, review_correction bước 5, FR-INC-03, D46, D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Kỳ gốc FINAL → carryover vào kỳ kế tiếp; kỳ kế tiếp FINAL → chặn sửa (M_161)\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-09a",
+   "level": "sub",
+   "parent": "E09-09",
+   "title": "[E09-09a] Tính lại thưởng kỳ gốc theo giao dịch hiệu lực (D46)",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "incentive_carryovers, review_correction bước 5, FR-INC-03, D46, D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-09\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** incentive_carryovers, review_correction bước 5, FR-INC-03, D46, D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Test ±\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-09b",
+   "level": "sub",
+   "parent": "E09-09",
+   "title": "[E09-09b] Ghi carryover kỳ kế tiếp (D47) và chặn D55",
+   "labels": [
+    "kind:DB",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "incentive_carryovers, review_correction bước 5, FR-INC-03, D46, D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-09\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** incentive_carryovers, review_correction bước 5, FR-INC-03, D46, D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Test kỳ kế tiếp FINAL\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-10",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-10] Màn hình tính / chi tiết thưởng R003 / R004",
+   "labels": [
+    "kind:FE",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "R003, R004",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** R003, R004\n\n**Tiêu chí nghiệm thu**\n- [ ] R004 hiện công thức từng dòng + version đã dùng\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-11",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-11] Bộ test 完納奨励金",
+   "labels": [
+    "kind:QA",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Pass test vector khách cung cấp + test biên quota, rollback, carryover, làm tròn\n\n> ⛔ **Blocked** — chờ khách trả lời Q-01 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-11a",
+   "level": "sub",
+   "parent": "E09-11",
+   "title": "[E09-11a] Test vector INC-EDGE-01..03 (phụ thuộc E09-01)",
+   "labels": [
+    "kind:QA",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-11\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp kỳ vọng của khách\n\n> ⛔ **Blocked** — chờ khách trả lời Q-01 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-11b",
+   "level": "sub",
+   "parent": "E09-11",
+   "title": "[E09-11b] Test biên quota / rollback / ngày hiệu lực",
+   "labels": [
+    "kind:QA",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-11\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Version thứ 4, thứ 5, rollback khi đủ 4\n\n> ⛔ **Blocked** — chờ khách trả lời Q-01 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-11c",
+   "level": "sub",
+   "parent": "E09-11",
+   "title": "[E09-11c] Test carryover và chặn D55",
+   "labels": [
+    "kind:QA",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09-11\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** C.3 INC-EDGE-01..03, GOV-RULE-01, D14, D45..D47, D55\n\n**Tiêu chí nghiệm thu**\n- [ ] Kỳ N, N+1 FINAL\n\n> ⛔ **Blocked** — chờ khách trả lời Q-01 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E09-12",
+   "level": "issue",
+   "parent": "E09",
+   "title": "[E09-12] Báo cáo RPT-07 kết quả 完納奨励金 theo kỳ",
+   "labels": [
+    "kind:BE",
+    "constraint:完納奨励金",
+    "blocked"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-07, TBL-REPORT-01",
+   "constraint": "完納奨励金",
+   "status": "Blocked",
+   "body": "**Thuộc:** E09\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-07, TBL-REPORT-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Hiện version tỷ lệ và carryover; xuất CSV\n\n> ⛔ **Blocked** — chờ khách trả lời Q-05 (PREMISE.md H-02)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-01",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-01] Đặc tả trường của 12 báo cáo",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "TBL-REPORT-01, FIG-027",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** TBL-REPORT-01, FIG-027\n\n**Tiêu chí nghiệm thu**\n- [ ] Mỗi báo cáo có danh sách cột, bộ lọc, nguồn dữ liệu\n\n**Phát sinh từ chỗ hở:** G-03 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-02",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-02] Job dựng báo cáo ngày trước 11:00",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "build_daily_reports, FIG-LOAD-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** build_daily_reports, FIG-LOAD-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Chạy sau khóa ngày; ghi job_runs; lỗi → thông báo\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-02a",
+   "level": "sub",
+   "parent": "E10-02",
+   "title": "[E10-02a] Đặc tả hàm: build_daily_reports (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "build_daily_reports, FIG-LOAD-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-02\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** build_daily_reports, FIG-LOAD-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-02b",
+   "level": "sub",
+   "parent": "E10-02",
+   "title": "[E10-02b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "build_daily_reports, FIG-LOAD-01",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-02\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** build_daily_reports, FIG-LOAD-01\n\n**Tiêu chí nghiệm thu**\n- [ ] Chạy sau khóa ngày; ghi job_runs; lỗi → thông báo\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-03] 8 báo cáo ngày",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Bộ lọc + CSV JA/VI mỗi báo cáo\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03a",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03a] RPT-01 Tổng hợp giao dịch theo 業務日",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03b",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03b] RPT-02 Lịch sử lot và trạng thái giao dịch",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03c",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03c] RPT-03 Người tham gia đã / sắp hết hiệu lực",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03d",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03d] RPT-04 Giao hàng tồn đọng và ngoại lệ",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03e",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03e] RPT-05 Bảng đối soát ngày",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03f",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03f] RPT-06 Bảng xuất đối soát kế toán",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03g",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03g] RPT-08 Log điều chỉnh sau khóa",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-03h",
+   "level": "sub",
+   "parent": "E10-03",
+   "title": "[E10-03h] RPT-09 Tranh chấp và SLA",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-01..06, RPT-08, RPT-09",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-01..06, RPT-08, RPT-09\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-04",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-04] 3 báo cáo tháng",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-10..12",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-10..12\n\n**Tiêu chí nghiệm thu**\n- [ ] Tổng hợp theo 業務日 và version\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-04a",
+   "level": "sub",
+   "parent": "E10-04",
+   "title": "[E10-04a] RPT-10 Theo người tham gia",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-10..12",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-10..12\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-04b",
+   "level": "sub",
+   "parent": "E10-04",
+   "title": "[E10-04b] RPT-11 Theo loại giao dịch",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-10..12",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-10..12\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-04c",
+   "level": "sub",
+   "parent": "E10-04",
+   "title": "[E10-04c] RPT-12 Thay đổi quy định và version",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-2",
+   "spec": "RPT-10..12",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** RPT-10..12\n\n**Tiêu chí nghiệm thu**\n- [ ] Khớp đặc tả E10-01\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-05",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-05] Màn hình B001 / B002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "B001, B002",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** B001, B002\n\n**Tiêu chí nghiệm thu**\n- [ ] Danh sách 12 báo cáo, bộ lọc, tải CSV\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-06",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-06] Xuất CSV kế toán",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-2",
+   "spec": "EXP-1, EXP-2, export_accounting, export_batches, IF-ACC-01, D18, D36",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** DB · **Người phụ trách (giả định):** BE-2\n**Spec LAB-4:** EXP-1, EXP-2, export_accounting, export_batches, IF-ACC-01, D18, D36\n\n**Tiêu chí nghiệm thu**\n- [ ] 1 batch / ngày; giá trị gốc + delta ghi nhận; thuế 10%; tải lại file cũ\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-07",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-07] Màn hình B003",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "B003",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** B003\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ ngày đã khóa; đã xuất → M_151\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-08",
+   "level": "issue",
+   "parent": "E10",
+   "title": "[E10-08] In phiếu nhận lot và phiếu giao hàng (PDF từ trình duyệt)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "09-03, D.3, FORM-LOT-01, FORM-DEL-01, giả định Q-21",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** 09-03, D.3, FORM-LOT-01, FORM-DEL-01, giả định Q-21\n\n**Tiêu chí nghiệm thu**\n- [ ] In PDF từ L003 và D002 bằng trình duyệt; không cần driver riêng (giả định A-01)\n\n**Phát sinh từ chỗ hở:** G-04 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-08a",
+   "level": "sub",
+   "parent": "E10-08",
+   "title": "[E10-08a] Mẫu PDF phiếu nhận lot (FORM-LOT-01)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "09-03, D.3, FORM-LOT-01, FORM-DEL-01, giả định Q-21",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-08\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** 09-03, D.3, FORM-LOT-01, FORM-DEL-01, giả định Q-21\n\n**Tiêu chí nghiệm thu**\n- [ ] Đủ trường FIG-026\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E10-08b",
+   "level": "sub",
+   "parent": "E10-08",
+   "title": "[E10-08b] Mẫu PDF phiếu giao hàng (FORM-DEL-01)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "09-03, D.3, FORM-LOT-01, FORM-DEL-01, giả định Q-21",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E10-08\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** 09-03, D.3, FORM-LOT-01, FORM-DEL-01, giả định Q-21\n\n**Tiêu chí nghiệm thu**\n- [ ] Đủ trường FIG-026\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-01",
+   "level": "issue",
+   "parent": "E11",
+   "title": "[E11-01] Version tham số vận hành",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "ops_setting_versions, notification_settings, NTF-1, save_ops_setting_version, D15, D35",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** ops_setting_versions, notification_settings, NTF-1, save_ops_setting_version, D15, D35\n\n**Tiêu chí nghiệm thu**\n- [ ] Version mới có hiệu lực ≥ ngày mai; lịch sử gửi giữ nguyên\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-01a",
+   "level": "sub",
+   "parent": "E11-01",
+   "title": "[E11-01a] Đặc tả hàm: effective_ops_setting_version (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "ops_setting_versions, notification_settings, NTF-1, save_ops_setting_version, D15, D35",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11-01\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** ops_setting_versions, notification_settings, NTF-1, save_ops_setting_version, D15, D35\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-01b",
+   "level": "sub",
+   "parent": "E11-01",
+   "title": "[E11-01b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "ops_setting_versions, notification_settings, NTF-1, save_ops_setting_version, D15, D35",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11-01\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** ops_setting_versions, notification_settings, NTF-1, save_ops_setting_version, D15, D35\n\n**Tiêu chí nghiệm thu**\n- [ ] Version mới có hiệu lực ≥ ngày mai; lịch sử gửi giữ nguyên\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-02",
+   "level": "issue",
+   "parent": "E11",
+   "title": "[E11-02] Kiểm tra sự kiện và sinh thông báo (4 sự kiện)",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "run_notification_checks, Q-18, FR-NOTIFY-01, FR-PARTY-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** run_notification_checks, Q-18, FR-NOTIFY-01, FR-PARTY-03\n\n**Tiêu chí nghiệm thu**\n- [ ] QUAL_EXPIRING, DISPUTE_OVERDUE, DELIVERY_BACKLOG, EXPORT_FAILED; chạy bằng pg_cron\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-02a",
+   "level": "sub",
+   "parent": "E11-02",
+   "title": "[E11-02a] Đặc tả hàm: run_notification_checks (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "run_notification_checks, Q-18, FR-NOTIFY-01, FR-PARTY-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11-02\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** run_notification_checks, Q-18, FR-NOTIFY-01, FR-PARTY-03\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-02b",
+   "level": "sub",
+   "parent": "E11-02",
+   "title": "[E11-02b] Hiện thực + test",
+   "labels": [
+    "kind:DB"
+   ],
+   "kind": "DB",
+   "owner": "BE-1",
+   "spec": "run_notification_checks, Q-18, FR-NOTIFY-01, FR-PARTY-03",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11-02\n**Loại:** DB · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** run_notification_checks, Q-18, FR-NOTIFY-01, FR-PARTY-03\n\n**Tiêu chí nghiệm thu**\n- [ ] QUAL_EXPIRING, DISPUTE_OVERDUE, DELIVERY_BACKLOG, EXPORT_FAILED; chạy bằng pg_cron\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-03",
+   "level": "issue",
+   "parent": "E11",
+   "title": "[E11-03] Gửi email qua outbox và retry",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "notification_outbox, JOB-1, D38, FR-NOTIFY-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** notification_outbox, JOB-1, D38, FR-NOTIFY-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Retry tối đa 3; Critical xong ≤ 5 phút; lỗi → ops_alert\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-04",
+   "level": "issue",
+   "parent": "E11",
+   "title": "[E11-04] Màn hình N001 / N002 / C003",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "N001, N002, C003, notifications",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** N001, N002, C003, notifications\n\n**Tiêu chí nghiệm thu**\n- [ ] N001 tạo version mới\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-05",
+   "level": "issue",
+   "parent": "E11",
+   "title": "[E11-05] Trang chủ C002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "C002",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** C002\n\n**Tiêu chí nghiệm thu**\n- [ ] Số liệu đọc từ DB theo role\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E11-06",
+   "level": "issue",
+   "parent": "E11",
+   "title": "[E11-06] API cho C002 / C003 / N002",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "C002, C003, N002",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E11\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** C002, C003, N002\n\n**Tiêu chí nghiệm thu**\n- [ ] Thêm API vào API Design (LAB-4 chưa có)\n\n**Phát sinh từ chỗ hở:** G-01 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E12-01",
+   "level": "issue",
+   "parent": "E12",
+   "title": "[E12-01] PoC PWA + hàng đợi IndexedDB",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "ADR-008, R-05 (LAB-2)",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E12\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** ADR-008, R-05 (LAB-2)\n\n**Tiêu chí nghiệm thu**\n- [ ] Chứng minh lưu / gửi lại trên tablet thật; báo cáo kết quả PoC\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E12-02",
+   "level": "issue",
+   "parent": "E12",
+   "title": "[E12-02] API đồng bộ idempotent",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "SYN-1, client_ops",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E12\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** SYN-1, client_ops\n\n**Tiêu chí nghiệm thu**\n- [ ] Gửi lại cùng client_op_id không tạo trùng; lỗi nghiệp vụ → CONFLICT\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E12-03",
+   "level": "issue",
+   "parent": "E12",
+   "title": "[E12-03] Hàng đợi offline cho L002 / D002",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-1",
+   "spec": "L002, D002, M_129, M_147",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E12\n**Loại:** FE · **Người phụ trách (giả định):** FE-1\n**Spec LAB-4:** L002, D002, M_129, M_147\n\n**Tiêu chí nghiệm thu**\n- [ ] Gắn với user đăng nhập; không đổi user khi còn op chưa gửi\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E12-04",
+   "level": "issue",
+   "parent": "E12",
+   "title": "[E12-04] Xử lý xung đột đồng bộ S005",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "S005, SYN-2, resolve_sync_conflict, Q-10",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E12\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** S005, SYN-2, resolve_sync_conflict, Q-10\n\n**Tiêu chí nghiệm thu**\n- [ ] SETTLEMENT áp dụng lại / hủy có lý do\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E12-04a",
+   "level": "sub",
+   "parent": "E12-04",
+   "title": "[E12-04a] Đặc tả hàm: resolve_sync_conflict (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "S005, SYN-2, resolve_sync_conflict, Q-10",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E12-04\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** S005, SYN-2, resolve_sync_conflict, Q-10\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E12-04b",
+   "level": "sub",
+   "parent": "E12-04",
+   "title": "[E12-04b] API SYN-2 + màn hình S005",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "S005, SYN-2, resolve_sync_conflict, Q-10",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E12-04\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** S005, SYN-2, resolve_sync_conflict, Q-10\n\n**Tiêu chí nghiệm thu**\n- [ ] Có audit\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-01",
+   "level": "issue",
+   "parent": "E13",
+   "title": "[E13-01] Tra cứu audit A003",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "A003, AUD-1, FR-AUDIT-02",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** A003, AUD-1, FR-AUDIT-02\n\n**Tiêu chí nghiệm thu**\n- [ ] Tìm theo trade, 業務日, người tham gia; p95 ≤ 2s\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-02",
+   "level": "issue",
+   "parent": "E13",
+   "title": "[E13-02] Lịch chợ A004 (không xóa vật lý)",
+   "labels": [
+    "kind:FE"
+   ],
+   "kind": "FE",
+   "owner": "FE-2",
+   "spec": "A004, ADM-1, B-23",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13\n**Loại:** FE · **Người phụ trách (giả định):** FE-2\n**Spec LAB-4:** A004, ADM-1, B-23\n\n**Tiêu chí nghiệm thu**\n- [ ] Chỉ đổi is_open; audit\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-03",
+   "level": "issue",
+   "parent": "E13",
+   "title": "[E13-03] Danh mục dùng chung A005",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "A005, master_items",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** A005, master_items\n\n**Tiêu chí nghiệm thu**\n- [ ] Không xóa vật lý, chỉ ngừng dùng\n\n**Phát sinh từ chỗ hở:** G-01 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-03a",
+   "level": "sub",
+   "parent": "E13-03",
+   "title": "[E13-03a] Đặc tả API danh mục (LAB-4 chưa có)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "A005, master_items",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13-03\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** A005, master_items\n\n**Tiêu chí nghiệm thu**\n- [ ] Thêm API\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-03b",
+   "level": "sub",
+   "parent": "E13-03",
+   "title": "[E13-03b] API + màn hình A005",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "A005, master_items",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13-03\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** A005, master_items\n\n**Tiêu chí nghiệm thu**\n- [ ] Audit\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-04",
+   "level": "issue",
+   "parent": "E13",
+   "title": "[E13-04] Xuất dữ liệu cá nhân theo yêu cầu (APPI)",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "BE-1",
+   "spec": "09-06, Q-23",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13\n**Loại:** BE · **Người phụ trách (giả định):** BE-1\n**Spec LAB-4:** 09-06, Q-23\n\n**Tiêu chí nghiệm thu**\n- [ ] Quản trị viên xuất dữ liệu của một người tham gia, có audit\n\n**Phát sinh từ chỗ hở:** G-01 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-05",
+   "level": "issue",
+   "parent": "E13",
+   "title": "[E13-05] Chuyển chứng từ sang lưu trữ lạnh sau 3 năm",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "INF-1",
+   "spec": "attachments.storage_tier, DR-RET-01, B.7",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13\n**Loại:** BE · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** attachments.storage_tier, DR-RET-01, B.7\n\n**Tiêu chí nghiệm thu**\n- [ ] Job chuyển COLD; khôi phục ≤ 2 ngày làm việc\n\n**Phát sinh từ chỗ hở:** G-02 (task-breakdown.md §4)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-05a",
+   "level": "sub",
+   "parent": "E13-05",
+   "title": "[E13-05a] Đặc tả hàm: archive_attachments (job lưu trữ lạnh, chưa có trong Function_List) (Function_List LAB-4: chưa đặc tả)",
+   "labels": [
+    "kind:SPEC"
+   ],
+   "kind": "SPEC",
+   "owner": "PL",
+   "spec": "attachments.storage_tier, DR-RET-01, B.7",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13-05\n**Loại:** SPEC · **Người phụ trách (giả định):** PL\n**Spec LAB-4:** attachments.storage_tier, DR-RET-01, B.7\n\n**Tiêu chí nghiệm thu**\n- [ ] Sheet function spec được PL duyệt trước khi code (G-02 = B)\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E13-05b",
+   "level": "sub",
+   "parent": "E13-05",
+   "title": "[E13-05b] Hiện thực + test",
+   "labels": [
+    "kind:BE"
+   ],
+   "kind": "BE",
+   "owner": "INF-1",
+   "spec": "attachments.storage_tier, DR-RET-01, B.7",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E13-05\n**Loại:** BE · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** attachments.storage_tier, DR-RET-01, B.7\n\n**Tiêu chí nghiệm thu**\n- [ ] Job chuyển COLD; khôi phục ≤ 2 ngày làm việc\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E14-01",
+   "level": "issue",
+   "parent": "E14",
+   "title": "[E14-01] Backup PITR và diễn tập restore",
+   "labels": [
+    "kind:INF"
+   ],
+   "kind": "INF",
+   "owner": "INF-1",
+   "spec": "NFR-AVL-03, D39, ACC-05",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E14\n**Loại:** INF · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** NFR-AVL-03, D39, ACC-05\n\n**Tiêu chí nghiệm thu**\n- [ ] Biên bản restore đạt RTO ≤ 4h, RPO ≤ 15 phút\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E14-02",
+   "level": "issue",
+   "parent": "E14",
+   "title": "[E14-02] Giám sát và cảnh báo vận hành",
+   "labels": [
+    "kind:INF"
+   ],
+   "kind": "INF",
+   "owner": "INF-1",
+   "spec": "NFR-OPS-01, job_runs, ops_alert",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E14\n**Loại:** INF · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** NFR-OPS-01, job_runs, ops_alert\n\n**Tiêu chí nghiệm thu**\n- [ ] Có danh sách cảnh báo + diễn tập\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E14-03",
+   "level": "issue",
+   "parent": "E14",
+   "title": "[E14-03] Load test theo FIG-LOAD-01",
+   "labels": [
+    "kind:QA"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "NFR-PERF-01/02, C.5",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E14\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** NFR-PERF-01/02, C.5\n\n**Tiêu chí nghiệm thu**\n- [ ] Báo cáo p95 ≤ 2s ở 60 user đồng thời, 1,200 giao dịch / ngày\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E14-04",
+   "level": "issue",
+   "parent": "E14",
+   "title": "[E14-04] Triển khai Data Encryption Checklist",
+   "labels": [
+    "kind:INF"
+   ],
+   "kind": "INF",
+   "owner": "INF-1",
+   "spec": "Data Encryption Checklist, 09-06",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E14\n**Loại:** INF · **Người phụ trách (giả định):** INF-1\n**Spec LAB-4:** Data Encryption Checklist, 09-06\n\n**Tiêu chí nghiệm thu**\n- [ ] Mỗi dòng checklist có bằng chứng\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E14-05",
+   "level": "issue",
+   "parent": "E14",
+   "title": "[E14-05] Kiểm thử bảo mật cơ bản",
+   "labels": [
+    "kind:QA"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "NFR-SEC-01/03/04",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E14\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** NFR-SEC-01/03/04\n\n**Tiêu chí nghiệm thu**\n- [ ] MFA, khóa tạm, timeout, RLS, secret\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  },
+  {
+   "key": "E14-06",
+   "level": "issue",
+   "parent": "E14",
+   "title": "[E14-06] Ma trận tương thích trình duyệt / tablet",
+   "labels": [
+    "kind:QA"
+   ],
+   "kind": "QA",
+   "owner": "QA-1",
+   "spec": "NFR-COMP-01, Q-22",
+   "constraint": "",
+   "status": "Todo",
+   "body": "**Thuộc:** E14\n**Loại:** QA · **Người phụ trách (giả định):** QA-1\n**Spec LAB-4:** NFR-COMP-01, Q-22\n\n**Tiêu chí nghiệm thu**\n- [ ] Test trên tablet giả định Q-22\n\nĐịnh nghĩa xong: task-breakdown.md §1."
+  }
+ ]
+}

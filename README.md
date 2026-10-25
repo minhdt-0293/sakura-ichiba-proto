@@ -1,73 +1,67 @@
-# 桜水産市場 業務支援システム — Prototype (LAB-2, Product A)
+# sakura-ichiba-proto — LAB-5: break task, GitHub Project và báo cáo tiến độ
 
-Prototype chạy thật của hệ thống hỗ trợ nghiệp vụ chợ bán buôn thủy sản (RFP PRODUCT-A-RFP-JA-V1.0-RC7).
+Product A: hệ thống hỗ trợ nghiệp vụ chợ bán buôn thủy sản cho 株式会社 桜水産市場 (khách hư cấu của chương trình LAB AIDD for PL).
+Repo này chứa prototype LAB-2 / LAB-3 và kết quả LAB-5. README của prototype chuyển sang `docs/README-prototype.md`.
 
-- **Stack:** Next.js 15 (App Router) · Supabase (Postgres + Auth) · Vercel
-- **Giao diện:** song ngữ 日本語 / Tiếng Việt, đổi bằng nút ở góc phải trên
-- **Dữ liệu:** toàn bộ là mock (hư cấu), đổ sẵn bằng `supabase/02_seed.sql`
+## 1. LAB-5 làm gì
 
-## URL demo
+- Chia bộ thiết kế LAB-4 (`specs-v2`, quyết định D1–D55) thành **14 epic → 86 issue → 97 sub-issue** (146 task lá).
+- Mỗi task lá có điểm **SWP** (skill estimate-swp, PL đã review) và **Hours** (1 SWP = 4 h).
+- 完納奨励金 tách thành epic riêng (E09) với 12 issue; phần phụ thuộc công thức để Blocked chờ khách.
+- Giả lập 3 sprint đầu và viết báo cáo tiến độ cho Sprint 3 (07/12–18/12/2026).
 
-`https://sakura-ichiba-proto.vercel.app/`
+## 2. Link
 
-## Tài khoản demo (dành cho giảng viên)
+| | |
+|---|---|
+| GitHub Project (public) | https://github.com/users/minhdt-0293/projects/2 |
+| Issue | https://github.com/minhdt-0293/sakura-ichiba-proto/issues — #1–#14 là epic, #15–#197 là issue / sub-issue |
+| View gợi ý trên Project | Lọc `Iteration = Sprint 3` để xem sprint báo cáo; nhóm theo `Status` để xem dạng board |
 
-Mật khẩu chung: **`Demo@2026`**
+Field trên Project: `Status` (Todo / In Progress / In Review / Done / Blocked), `Iteration` (Sprint 1–18, 2 tuần), `Owner (giả định)`, `SWP`, `Hours`, `Kind`, `Spec`, `Constraint`.
 
-| Email | Vai trò | Dùng để thử |
-|---|---|---|
-| `admin@demo.sakura-ichiba.example` | Quản trị hệ thống (có đủ mọi vai trò) | Xem toàn bộ, tài khoản, audit log, duyệt version tỷ lệ |
-| `intake@demo.sakura-ichiba.example` | Tiếp nhận lot + ghi đánh giá | L002 tạo lot → L004 ghi đánh giá → công khai |
-| `trade@demo.sakura-ichiba.example` | Giao dịch | T002 相対取引, T004 nhập kết quả せり, hủy giao dịch |
-| `delivery@demo.sakura-ichiba.example` | Giao hàng | D002 giao nhiều lần, D003 ngoại lệ |
-| `settle@demo.sakura-ichiba.example` | Đối soát | S001 khóa ngày, R003 tính thưởng, B003 xuất kế toán |
-| `settle2@demo.sakura-ichiba.example` | Đối soát (người duyệt thứ 2) | S008 duyệt yêu cầu sửa do `settle` lập |
-| `rule@demo.sakura-ichiba.example` | Quản trị quy định | R002 soạn version tỷ lệ (người khác duyệt) |
+## 3. Đọc theo thứ tự
 
-> Dữ liệu mẫu được tính lùi theo ngày chạy seed (7 ngày gần nhất). Trước buổi demo nên chạy lại `supabase/02_seed.sql` trong Supabase SQL Editor để dữ liệu "hôm nay" luôn mới.
+| File | Nội dung |
+|---|---|
+| [PREMISE.md](PREMISE.md) | Chỗ khác so với LAB-4 (S-01..S-04), giả định bổ sung (A-01..A-06), hướng đã chốt (H-01..H-04) |
+| [task-breakdown.md](task-breakdown.md) | Nguyên tắc chia task và DoD, bảng spec → issue, các issue 完納奨励金, chỗ hở của spec LAB-4 (G-01..G-06) |
+| [estimate.md](estimate.md) | Report SWP, review của PL, quy đổi giờ, tổng theo epic, so sánh với LAB-1 |
+| [progress-report.md](progress-report.md) | Báo cáo Sprint 3 (**giả lập**): trạng thái, burndown, rủi ro trễ |
+| [AI-report.md](AI-report.md) | Dùng AI thế nào, AI sai ở đâu và cách phát hiện, con người quyết định ở đâu |
 
-## Kịch bản demo gợi ý (khoảng 10 phút)
-
-1. Mở URL khi chưa đăng nhập → bị chuyển về `/login`. `/api/*` trả 401.
-2. **trade** → 相対取引入力 → chọn bên mua `N-104` (許可 đã hết hạn) → bị chặn. Chọn `B-203` (承認 bị tạm ngừng) → bị chặn. Hai lỗi khác nhau vì 許可 và 承認 được quản lý tách riêng.
-3. **trade** → nhập số lượng lớn hơn số còn lại của lot → bị chặn (chống bán vượt).
-4. **trade** → nhập kết quả せり: chỉ nhập kết quả cuối, kèm người xác nhận, không có OCR/AI.
-5. **delivery** → giao một phần → giao nốt → trạng thái tự chuyển "giao xong".
-6. **settle** → mở một giao dịch → yêu cầu sửa → tự duyệt → bị chặn (tách lập–duyệt). Sau đó **settle2** duyệt → giá trị gốc giữ nguyên, có thêm bản ghi delta.
-7. **settle** → S001 khóa ngày → **trade** hủy giao dịch của ngày đó → bị chặn.
-8. **settle** → R003 tính 完納奨励金 → R004 hiện công thức từng dòng; trả trễ = 0.
-9. **admin** → 操作ログ, lọc BLOCKED → thấy toàn bộ các lần bị chặn ở trên.
-
-## Tài liệu
-
-- [`docs/SCOPE.md`](docs/SCOPE.md) — chốt phạm vi: màn hình làm / gộp / để ngoài so với LAB-1, phần mock và việc cần làm nếu làm thật, ma trận quyền.
-- [`docs/DEPLOY.md`](docs/DEPLOY.md) — hướng dẫn deploy Supabase → GitHub → Vercel từng bước.
-- [`docs/AI-NOTES.md`](docs/AI-NOTES.md) — các chỗ AI sinh code sai và cách phát hiện / sửa.
-
-## Kiến trúc tóm tắt
+## 4. Cấu trúc repo (phần LAB-5)
 
 ```
-Trình duyệt (React client components, song ngữ)
-   │  fetch /api/...  (cookie phiên Supabase)
-   ▼
-Next.js middleware ── chặn mọi trang nếu chưa đăng nhập
-   ▼
-Next.js API routes (app/api/**) ── kiểm tra đăng nhập + vai trò (lib/roles.ts)
-   │  supabase-js với service role (chỉ ở server)
-   ▼
-Supabase Postgres
-   ├─ Bảng + RLS (authenticated chỉ đọc; anon không đọc được gì)
-   └─ Hàm nghiệp vụ plpgsql (confirm_trade, record_delivery, lock_business_day,
-      review_correction, review_rate_version, run_incentive, …) — chạy trong transaction
+README.md, PREMISE.md, task-breakdown.md, estimate.md, progress-report.md, AI-report.md
+docs/
+  burndown-sprint3.png        biểu đồ burndown Sprint 3 (giả lập)
+  README-prototype.md         README cũ của prototype LAB-2
+swp-report/
+  estimate-swp-*.html         report của skill estimate-swp (3 lần chạy; lần 3 là bản dùng)
+  swp-review.md               40 task PL review
+lab5/
+  backlog.json                backlog 197 mục (nguồn để tạo issue)
+  issue_map.json              mã task ↔ số issue ↔ item trên Project
+  swp.json                    SWP của 146 task lá + hệ số giờ
+  sprint_plan.json            task lá → sprint (giả lập, Sprint 1–4)
+  sim_sprint3.json            kịch bản trạng thái Sprint 3 (giả lập)
+  setup_project.py            tạo label, issue, sub-issue, Project, field
+  update_fields.py            ghi SWP / Hours lên Project
+  set_sprint.py               ghi Iteration / Status giả lập lên Project
+  PROMPT-claude-code.md       các bước còn lại chạy trong Claude Code
+(các thư mục còn lại là code prototype LAB-2 / LAB-3, LAB-5 không sửa)
 ```
 
-- Quy tắc nghiệp vụ quan trọng nằm trong hàm DB, để 2 người thao tác cùng lúc vẫn đúng: khóa dòng, ràng buộc số lượng không âm.
-- Mọi thao tác ghi đều để lại audit log có trước/sau. Thao tác bị chặn được API ghi riêng với `result = BLOCKED`.
+## 5. Chạy lại
 
-## Chạy trên máy (tùy chọn)
+Cần Python 3.9+ và GitHub CLI `gh` đã đăng nhập với scope `repo`, `project` (`gh auth refresh -s project`). Chạy trong thư mục `lab5/`:
 
-```bash
-cp .env.example .env.local   # điền 3 biến Supabase
-npm install
-npm run dev                  # http://localhost:3001
 ```
+python3 setup_project.py --dry-run   # xem trước
+python3 setup_project.py             # tạo issue + Project; chạy lại được, phần đã tạo được bỏ qua
+python3 update_fields.py             # ghi SWP / Hours (sửa swp.json rồi chạy lại để cập nhật)
+python3 set_sprint.py                # ghi Iteration / Status giả lập
+```
+
+Nội dung trong repo do người học tự viết (có AI hỗ trợ, xem AI-report.md). Không có dữ liệu thật của khách, không có thông tin cá nhân, không có secret.
