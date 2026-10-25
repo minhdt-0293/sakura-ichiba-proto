@@ -38,7 +38,7 @@ docs/
   burndown-sprint3.png        biểu đồ burndown Sprint 3 (giả lập)
   README-prototype.md         README cũ của prototype LAB-2
 swp-report/
-  estimate-swp-*.html         report của skill estimate-swp (3 lần chạy; lần 3 là bản dùng)
+  estimate-swp-*.html         report của skill estimate-swp (lần chạy 3, bản dùng)
   swp-review.md               40 task PL review
 lab5/
   backlog.json                backlog 197 mục (nguồn để tạo issue)

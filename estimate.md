@@ -7,8 +7,8 @@
 
 | Lần chạy | File (thư mục `swp-report/`) | Đầu vào | Tổng SWP | Dùng? |
 |---|---|---|---|---|
-| 1 | `estimate-swp-lab5-backlog-20261023-2053.html` | backlog-list.md + spec LAB-4 **v1** | 629 | Không — chấm trên spec cũ |
-| 2 | `estimate-swp-lab5-backlog-20261023-2117.html` | như lần 1 | 636 | Không — vẫn spec v1 |
+| 1 | — (bản nháp, không đưa lên repo) | backlog-list.md + spec LAB-4 **v1** | 629 | Không — chấm trên spec cũ |
+| 2 | — (bản nháp, không đưa lên repo) | như lần 1 | 636 | Không — vẫn spec v1 |
 | 3 | `estimate-swp-lab5-backlog-drive-v2-20261023-2132.html` | backlog-list.md + spec LAB-4 **v2** (Google Drive) | 629 | **Có** |
 
 Lần 3: mức xử lý `medium` (một người chấm, không có người chấm đối chiếu). Độ tin cậy: 5 high · 120 medium · 21 low.
